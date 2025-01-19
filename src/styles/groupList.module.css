@@ -1,0 +1,82 @@
+.groupListContainer{
+    background-color: #ffffff;
+    position: relative;
+    height: 100vh;
+    z-index: 1;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.listContainer{
+  
+    height: 90vh;
+    overflow-y: scroll;
+    position: relative;
+    margin-left: 1rem;
+}
+.groupListContainer .heading{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    padding-bottom: 3.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: #000000;
+    padding-top:1.5rem;
+    position: sticky;
+    top: 1rem;
+    z-index: 1000;
+    background-color: #ffffff;
+    height: 10vh;
+}
+ .list{
+    display: flex;
+    align-items: center;
+    margin: 1.2rem;
+    gap: 20px;
+
+}
+.list p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.7rem;
+    
+
+}
+ .circulerDial{
+    width: 4.3rem;
+    height: 4.3rem;
+    border: none;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ffffff;
+
+
+}
+
+.groupListContainer button{
+    width: 5rem;
+    height: 5rem;
+    background-color: #16008B;
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    border-radius: 100%;
+    position: sticky;
+    bottom: 5%;
+    left: 70%;
+    margin: 20px 20px;
+    transition: 1s ease-out all;
+
+}
+.groupListContainer button:hover{
+    background-color: #1b01ae;
+}

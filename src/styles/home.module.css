@@ -1,0 +1,156 @@
+.mainContainer{
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin-top: 0%;
+    position: relative;
+    display: flex;
+
+}
+
+.mainContainer .sidebar{
+    background-color: black;
+    width: 25%;
+  
+}
+.mainContainer .initialNotesPage{
+    background-color: #DAE5F5;
+    width: 75%;
+    height: 100%;
+    z-index: 1;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+
+}
+.notesPage{
+    background-color: #DAE5F5;
+    width: 75%;
+    height: 100%;
+    z-index: 1;
+}
+.mainContainer .notesPage{
+    background-color: #DAE5F5;
+    width: 75%;
+    height: 100%;
+    z-index: 1;
+    position: relative;
+}
+.mainContainer .noteContainer{
+    margin-top: 98px;
+    width: 100%;
+    height: calc(100% - 98px - 200px);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+ 
+}
+
+.mainContainer .initialNotesPage div h4{
+    margin-top: 0.5rem;
+    font-family: 'Roboto';
+    font-size: 3.1rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-align: center;
+    line-height: 3.6rem;
+
+}
+
+.mainContainer .initialNotesPage div p{
+    margin-top: 1rem;
+    font-family: 'Roboto';
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+    color: #292929;
+    letter-spacing: 0.05em;
+
+
+}
+.encyrptMsg{
+    position: fixed;
+    bottom: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+ .header{
+    width:100% ;
+    height: 98px;
+    background-color: #001F8B;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+}
+
+.message{
+    width:100% ;
+    height: 200px;
+    position: sticky;
+    top: 100%;
+}
+.backwardArrow{
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+    .mainContainer .sidebar{
+        display: block;
+        width: 100%;
+      
+    }
+    .mainContainer .sidebar.hidden {
+        display: none; 
+        width: 0%;
+        background-color: #001F8B;
+    }
+    .mainContainer .initialNotesPage{
+        display: none;
+    }
+    .mainContainer .notesPage{
+        display: none;
+    }
+    .mainContainer .notesPage.active{
+        display: block;
+        width: 100%;
+    }
+   
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .mainContainer .sidebar{
+        width: 40%;
+        background-color: #001F8B;
+    }
+    .mainContainer .initialNotesPage{
+        width: 60%;
+    }
+    .mainContainer .notesPage{
+        width: 60%;
+    }
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark background */
+    z-index: 999; /* Make sure the overlay is on top */
+  }
+  
+  .modelOverlay {
+    position: relative;
+    z-index: 1000; /* Ensure the main content is below the overlay */
+  }
